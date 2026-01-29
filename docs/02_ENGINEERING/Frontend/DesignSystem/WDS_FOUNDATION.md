@@ -38,7 +38,7 @@ interface ButtonProps {
 | State | Style Change |
 |-------|-------------|
 | Hover | `colors.orange600` (Primary) |
-| Active | `colors.orange700` (Primary) |
+| Active | `colors.orange700` (Primary), **Scale 0.96 (Bouncy)** |
 | Disabled | opacity: 0.5, cursor: not-allowed |
 | Loading | Spinner 표시, 클릭 비활성 |
 
@@ -172,6 +172,7 @@ interface BadgeProps {
   variant: 'fill' | 'weak' | 'outline';
   size: 'sm' | 'md' | 'lg';
   dot?: boolean;          // 왼쪽 점 표시
+  brix?: 'honey' | 'grape' | 'apple' | 'mandarin' | 'tomato' | 'bitter'; // 당도 스타일
   children: React.ReactNode;
 }
 ```

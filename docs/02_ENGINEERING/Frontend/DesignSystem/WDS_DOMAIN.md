@@ -16,7 +16,8 @@
 interface BrixBadgeProps {
   score: number;           // 당도 점수
   showScore?: boolean;     // 점수 표시 (기본: true)
-  size?: 'sm' | 'md';      // 크기
+  variant?: 'flat' | '3d'; // 2.5D, 3D (Lottie)
+  size?: 'sm' | 'md' | 'lg';
 }
 ```
 
@@ -72,6 +73,7 @@ interface FinancialTextProps {
   showSign?: boolean;      // +/- 부호 표시
   showUnit?: boolean;      // '원' 또는 '크레딧' 표시
   unit?: '원' | '크레딧';
+  animated?: boolean;      // Rolling Counter 적용 여부 (기본: true)
 }
 ```
 

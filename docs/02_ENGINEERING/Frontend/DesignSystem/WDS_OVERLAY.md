@@ -41,7 +41,8 @@ interface ModalProps {
 | Background | White |
 | Border Radius | `shape.radiusXl` (24px) |
 | Shadow | `shadow.lg` |
-| Overlay | `rgba(0, 0, 0, 0.5)` |
+| Overlay | `rgba(0, 0, 0, 0.5)` + `backdrop-filter: blur(4px)` |
+| Variant | **Glass** (Light Mode): `rgba(255,255,255,0.7)` + Blur 12px |
 
 ### Usage
 
@@ -117,6 +118,7 @@ interface BottomSheetProps {
 | Border Radius | `shape.radiusXl` (상단만) |
 | Handle | 40px × 4px, `colors.grey300` |
 | Shadow | `shadow.xl` |
+| Glass Effect | `backdrop-filter: var(--glass-blur)` |
 
 ### Usage
 

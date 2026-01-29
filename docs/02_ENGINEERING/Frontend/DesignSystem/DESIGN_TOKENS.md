@@ -100,6 +100,8 @@ src/
 | `colors.income` | #F59E0B | 입금, 충전, 이익 (+) |
 | `colors.expense` | #1C1917 | 지출, 출금 (-) |
 | `colors.locked` | #78716C | 보증금, 잠긴 금액 |
+| `colors.glassSurface` | rgba(255,255,255,0.7) | Glassmorphism 배경 |
+| `colors.glassBorder` | rgba(255,255,255,0.5) | Glassmorphism 테두리 |
 
 ### 2.6 Brix Colors (당도)
 
@@ -402,12 +404,19 @@ export const motion = {
   easeSpring: 'cubic-bezier(0.34, 1.56, 0.64, 1)',
 } as const;
 
+export const physics = {
+  springStandard: { stiffness: 45, damping: 10, mass: 0.8 }, // Rolling Counter
+  springStiff: { stiffness: 80, damping: 12, mass: 0.6 },
+  springWobbly: { stiffness: 60, damping: 8, mass: 1.2 },
+} as const;
+
 // Type exports
 export type Colors = typeof colors;
 export type Typography = typeof typography;
 export type Shape = typeof shape;
 export type Shadow = typeof shadow;
 export type Motion = typeof motion;
+export type Physics = typeof physics;
 ```
 
 ---
